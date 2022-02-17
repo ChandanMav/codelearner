@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>B#Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p id="title">Welcome to Home Page</p>
+        <button class="btn1">Click Here!</button>
+        <hr />
+        <table>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Location
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kumar
+                </td>
+                <td>
+                    KOlkata
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Milan
+                </td>
+                <td>
+                    Delhi
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="js/jquery-3.6.0.slim.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div.container').on('click', 'button.btn1', function (e) {
+                $('#title').html("<b>Thanks For clicking me</b>" + Math.random() )
+            });
+        });
+    </script>
+</body>
+
+</html>
